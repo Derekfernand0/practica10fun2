@@ -14,6 +14,7 @@ namespace practica10fun2
         private double monto;
         private int idcarrito;
         private long numtargeta;
+        //getter y setter
 
         public long Numtargeta
         {
