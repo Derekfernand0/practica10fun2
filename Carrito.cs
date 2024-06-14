@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace practica10fun2
 {
+
+    // hola
     internal class Carrito
     {
         private int idcarrito;
