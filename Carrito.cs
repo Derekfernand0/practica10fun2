@@ -8,6 +8,7 @@ namespace practica10fun2
 {
 
     // hola
+    //apoco si pa
     internal class Carrito
     {
         private int idcarrito;
