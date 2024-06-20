@@ -16,5 +16,25 @@ namespace practica10fun2
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void agregarDirecciopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

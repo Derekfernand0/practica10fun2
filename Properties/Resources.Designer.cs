@@ -63,9 +63,49 @@ namespace practica10fun2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carrito_de_compras {
+            get {
+                object obj = ResourceManager.GetObject("carrito de compras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap inicio_de_sesion {
+            get {
+                object obj = ResourceManager.GetObject("inicio de sesion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap localizacion {
+            get {
+                object obj = ResourceManager.GetObject("localizacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pilincraft {
             get {
                 object obj = ResourceManager.GetObject("pilincraft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pilincraft_20_6_2024 {
+            get {
+                object obj = ResourceManager.GetObject("Pilincraft-20-6-2024", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

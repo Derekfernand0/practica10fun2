@@ -46,8 +46,5 @@ namespace practica10fun2
             get { return this.cliente; }
             set { this.cliente = value; }
         }
-        //lista de targeta
-        private List<Targeta> targeta = new List<Targeta>();
-        Targeta tg = new Targeta();
     }
 }

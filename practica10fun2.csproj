@@ -90,5 +90,17 @@
   <ItemGroup>
     <None Include="Resources\pilincraft.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pilincraft-20-6-2024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio de sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\localizacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrito de compras.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
