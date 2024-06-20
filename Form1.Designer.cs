@@ -35,7 +35,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::practica10fun2.Properties.Resources.pilincraft;
-            this.pictureBox1.Location = new System.Drawing.Point(305, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(570, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
