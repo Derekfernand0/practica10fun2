@@ -25,7 +25,9 @@ namespace practica10fun2
     {
         { "Notch", new ListaProductos("Notch", 256m) },
         { "Golden Carrot", new ListaProductos("Golden Carrot", 3m) },
-        { "Producto3", new ListaProductos("Producto 3", 7m) }
+        { "Apple", new ListaProductos("Apple", 1m) },
+        { "Golden Apple", new ListaProductos("Golden Apple", 10m) },
+        { "Diamante", new ListaProductos("Diamante", 7m) }
     };
 
             // Configura las columnas del DataGridView
@@ -106,6 +108,21 @@ namespace practica10fun2
         private void GCrrt(object sender, EventArgs e)
         {
             AñadirOActualizarProducto("Golden Carrot");
+        }
+
+        private void Dmnd(object sender, EventArgs e)
+        {
+            AñadirOActualizarProducto("Diamante");
+        }
+
+        private void GnApp(object sender, EventArgs e)
+        {
+            AñadirOActualizarProducto("Golden Apple");
+        }
+
+        private void Apple(object sender, EventArgs e)
+        {
+            AñadirOActualizarProducto("Apple");
         }
     }
 }
