@@ -12,6 +12,8 @@ namespace practica10fun2
 {
     public partial class Form1 : Form
     {
+       
+       
         private Dictionary<string, ListaProductos> productos;
         public Form1()
         {
@@ -35,7 +37,8 @@ namespace practica10fun2
             dataGridView.Columns[0].Name = "Item";
             dataGridView.Columns[1].Name = "Precio";
             dataGridView.Columns[2].Name = "Cantidad";
-            // Inicialmente ocultar el DataGridView
+            // Inicialmente ocultar el DataGridView y el label
+            labelTotal.Visible = false;
             dataGridView.Visible = false;
             toolStripMenuItem2.Text = "Mostrar";
         }
@@ -65,6 +68,7 @@ namespace practica10fun2
             {
                 // Cambiar la visibilidad del DataGridView
                 dataGridView.Visible = !dataGridView.Visible;
+                labelTotal.Visible = !labelTotal.Visible;
 
                 // Cambiar el texto del botón según la visibilidad
                 if (dataGridView.Visible)
@@ -98,8 +102,10 @@ namespace practica10fun2
                 {
                     dataGridView.Rows.Add(producto.Nombre, producto.Precio, 1);
                 }
+                ActualizarTotal();
             }
         }
+        
         private void EGA(object sender, EventArgs e)
         {
             AñadirOActualizarProducto("Notch");
@@ -124,7 +130,33 @@ namespace practica10fun2
         {
             AñadirOActualizarProducto("Apple");
         }
+       
+        private void ActualizarTotal()
+        {
+            decimal total = 0;
+
+            foreach (DataGridViewRow fila in dataGridView.Rows)
+            {
+                if (fila.Cells["Item"].Value != null)
+                {
+                    decimal precio = Convert.ToDecimal(fila.Cells["Precio"].Value);
+                    int cantidad = Convert.ToInt32(fila.Cells["Cantidad"].Value);
+                    total += precio * cantidad;
+                }
+            }
+
+            labelTotal.Text = $"Total: ${total:F2}";
+        }
+
+        private void buttonActualizarTotal_Click(object sender, EventArgs e)
+        {
+            {
+
+            }
+        }
     }
-}
+    }
+
+
     
 

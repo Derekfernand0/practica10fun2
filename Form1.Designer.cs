@@ -66,6 +66,8 @@
             this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelTotal = new System.Windows.Forms.Label();
+            this.buttonActualizarTotal = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -457,12 +459,36 @@
             this.Cantidad.HeaderText = "Cantidad";
             this.Cantidad.Name = "Cantidad";
             // 
+            // labelTotal
+            // 
+            this.labelTotal.AutoSize = true;
+            this.labelTotal.BackColor = System.Drawing.Color.DarkOrange;
+            this.labelTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotal.Location = new System.Drawing.Point(797, 601);
+            this.labelTotal.Name = "labelTotal";
+            this.labelTotal.Size = new System.Drawing.Size(96, 25);
+            this.labelTotal.TabIndex = 11;
+            this.labelTotal.Text = "Total: $0";
+            // 
+            // buttonActualizarTotal
+            // 
+            this.buttonActualizarTotal.Location = new System.Drawing.Point(12, 612);
+            this.buttonActualizarTotal.Name = "buttonActualizarTotal";
+            this.buttonActualizarTotal.Size = new System.Drawing.Size(81, 23);
+            this.buttonActualizarTotal.TabIndex = 12;
+            this.buttonActualizarTotal.Text = "Nada";
+            this.buttonActualizarTotal.UseVisualStyleBackColor = true;
+            this.buttonActualizarTotal.Visible = false;
+            this.buttonActualizarTotal.Click += new System.EventHandler(this.buttonActualizarTotal_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(1149, 647);
+            this.Controls.Add(this.buttonActualizarTotal);
+            this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -539,6 +565,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Item;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.Label labelTotal;
+        private System.Windows.Forms.Button buttonActualizarTotal;
     }
 }
 
