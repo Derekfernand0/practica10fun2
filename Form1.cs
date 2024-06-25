@@ -13,50 +13,36 @@ namespace practica10fun2
 {
     public partial class Form1 : Form
     {
-        private void ReproducirSonido(string BotonSound)
-        {
-            try
-            {
-                // Ruta completa del archivo de sonido
-                string rutaCompleta = System.IO.Path.Combine(Application.StartupPath, "Sounds", BotonSound);
 
-                // Verifica que el archivo exista
-                if (System.IO.File.Exists(rutaCompleta))
-                {
-                    using (SoundPlayer player = new SoundPlayer(rutaCompleta))
-                    {
-                        player.Play();
-                    }
-                }
-                else
-                {
-                    MessageBox.Show($"Archivo de sonido {BotonSound} no encontrado.");
-                }
-            }
-            catch (Exception ex)
-            {
-                // Manejo del error
-                MessageBox.Show($"Error al reproducir sonido: {ex.Message}");
-            }
-        }
-
+        private Timer timer;
 
         private Dictionary<string, ListaProductos> productos;
         public Form1()
         {
             InitializeComponent();
+            timer = new Timer
+            {
+                Interval = 1000 // 1000 ms = 1 segundo
+            };
+            timer.Tick += Timer_Tick;
         }
 
         private void Form1_Load(object sender, EventArgs e)
 
         {
+            
             productos = new Dictionary<string, ListaProductos>
     {
         { "Notch", new ListaProductos("Notch", 256m) },
         { "Golden Carrot", new ListaProductos("Golden Carrot", 3m) },
         { "Apple", new ListaProductos("Apple", 1m) },
         { "Golden Apple", new ListaProductos("Golden Apple", 10m) },
-        { "Diamante", new ListaProductos("Diamante", 7m) }
+        { "Diamante", new ListaProductos("Diamante", 7m) },
+        { "Hierro", new ListaProductos("Hierro", 1m) },
+        { "Cactus", new ListaProductos("Cactus", 1m) },
+        { "Arena", new ListaProductos("Arena", 4m) },
+        { "Trigo", new ListaProductos("Trigo", 1m) },
+        { "Grava", new ListaProductos("Grava", 4m) }
     };
 
             // Configura las columnas del DataGridView
@@ -135,35 +121,42 @@ namespace practica10fun2
         
         private void EGA(object sender, EventArgs e)
         {
-            SoundPlayer Sonido = new SoundPlayer();
-            Sonido.SoundLocation = "C:\\Users\\USER\\OneDrive\\Escritorio\\practica10fun2\\practica10fun2\\Sounds\\BotonSound.mp3";
-            Sonido.Play();
             AñadirOActualizarProducto("Notch");
-            
+            maea.Visible = true;
+
+            timer.Start();
         }
 
         private void GCrrt(object sender, EventArgs e)
         {
             AñadirOActualizarProducto("Golden Carrot");
-            ReproducirSonido("BotonSound");
+            zada.Visible = true;
+
+            timer.Start();
         }
 
         private void Dmnd(object sender, EventArgs e)
         {
             AñadirOActualizarProducto("Diamante");
-            ReproducirSonido("BotonSound.mp3");
+            de.Visible = true;
+
+            timer.Start();
         }
 
         private void GnApp(object sender, EventArgs e)
         {
             AñadirOActualizarProducto("Golden Apple");
-            ReproducirSonido("BotonSound.mp3");
+            mada.Visible = true;
+
+            timer.Start();
         }
 
         private void Apple(object sender, EventArgs e)
         {
             AñadirOActualizarProducto("Apple");
-            ReproducirSonido("BotonSound.mp3");
+            ma.Visible = true;
+
+            timer.Start();
         }
        
         private void ActualizarTotal()
@@ -186,8 +179,94 @@ namespace practica10fun2
         private void buttonActualizarTotal_Click(object sender, EventArgs e)
         {
             {
-
+              
             }
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mostrar1_Click(object sender, EventArgs e)
+        {
+          
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hierro(object sender, EventArgs e)
+        {
+            AñadirOActualizarProducto("Hierro");
+            ho.Visible = true;
+
+            timer.Start();
+        }
+
+        private void cactus(object sender, EventArgs e)
+        {
+            AñadirOActualizarProducto("Cactus");
+            cs.Visible = true;
+
+            timer.Start();
+        }
+
+        private void arena(object sender, EventArgs e)
+        {
+            AñadirOActualizarProducto("Arena");
+            aa.Visible = true;
+
+            timer.Start();
+        }
+
+        private void trigo(object sender, EventArgs e)
+        {
+            AñadirOActualizarProducto("Trigo");
+            to.Visible = true;
+
+            timer.Start();
+        }
+
+        private void grava(object sender, EventArgs e)
+        {
+            AñadirOActualizarProducto("Grava");
+            ga.Visible = true;
+
+            timer.Start();
+        }
+
+        private void Borrar(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                // Elimina la fila seleccionada
+                dataGridView.Rows.RemoveAt(e.RowIndex);
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            // Ocultar la imagen y detener el temporizador
+            ma.Visible = false;
+            mada.Visible = false;
+            maea.Visible = false;
+            zada.Visible = false;
+            to.Visible = false;
+            ga.Visible = false;
+            aa.Visible = false;
+            cs.Visible = false;
+            de.Visible = false;
+            ho.Visible = false;
+
+            timer.Stop();
         }
     }
     

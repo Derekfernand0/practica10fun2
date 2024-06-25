@@ -73,6 +73,26 @@ namespace practica10fun2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arena {
+            get {
+                object obj = ResourceManager.GetObject("arena", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cactus {
+            get {
+                object obj = ResourceManager.GetObject("cactus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap carrito_de_compras {
             get {
                 object obj = ResourceManager.GetObject("carrito de compras", resourceCulture);
@@ -103,6 +123,16 @@ namespace practica10fun2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flechit {
+            get {
+                object obj = ResourceManager.GetObject("flechit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap golden_apple {
             get {
                 object obj = ResourceManager.GetObject("golden apple", resourceCulture);
@@ -116,6 +146,16 @@ namespace practica10fun2.Properties {
         internal static System.Drawing.Bitmap golden_carrot {
             get {
                 object obj = ResourceManager.GetObject("golden carrot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grava {
+            get {
+                object obj = ResourceManager.GetObject("grava", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +206,16 @@ namespace practica10fun2.Properties {
         internal static System.Drawing.Bitmap Pilincraft_20_6_2024 {
             get {
                 object obj = ResourceManager.GetObject("Pilincraft-20-6-2024", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trigo {
+            get {
+                object obj = ResourceManager.GetObject("trigo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

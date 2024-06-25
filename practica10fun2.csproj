@@ -104,6 +104,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\trigo.png" />
+    <None Include="Resources\cactus.png" />
+    <None Include="Resources\arena.png" />
+    <None Include="Resources\grava.png" />
+    <None Include="Resources\flechit.png" />
     <Content Include="Sounds\BotonSound.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
