@@ -7,13 +7,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace practica10fun2
 {
     public partial class Form1 : Form
     {
-       
-       
+        private void ReproducirSonido(string BotonSound)
+        {
+            try
+            {
+                // Ruta completa del archivo de sonido
+                string rutaCompleta = System.IO.Path.Combine(Application.StartupPath, "Sounds", BotonSound);
+
+                // Verifica que el archivo exista
+                if (System.IO.File.Exists(rutaCompleta))
+                {
+                    using (SoundPlayer player = new SoundPlayer(rutaCompleta))
+                    {
+                        player.Play();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show($"Archivo de sonido {BotonSound} no encontrado.");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo del error
+                MessageBox.Show($"Error al reproducir sonido: {ex.Message}");
+            }
+        }
+
+
         private Dictionary<string, ListaProductos> productos;
         public Form1()
         {
@@ -108,27 +135,35 @@ namespace practica10fun2
         
         private void EGA(object sender, EventArgs e)
         {
+            SoundPlayer Sonido = new SoundPlayer();
+            Sonido.SoundLocation = "C:\\Users\\USER\\OneDrive\\Escritorio\\practica10fun2\\practica10fun2\\Sounds\\BotonSound.mp3";
+            Sonido.Play();
             AñadirOActualizarProducto("Notch");
+            
         }
 
         private void GCrrt(object sender, EventArgs e)
         {
             AñadirOActualizarProducto("Golden Carrot");
+            ReproducirSonido("BotonSound");
         }
 
         private void Dmnd(object sender, EventArgs e)
         {
             AñadirOActualizarProducto("Diamante");
+            ReproducirSonido("BotonSound.mp3");
         }
 
         private void GnApp(object sender, EventArgs e)
         {
             AñadirOActualizarProducto("Golden Apple");
+            ReproducirSonido("BotonSound.mp3");
         }
 
         private void Apple(object sender, EventArgs e)
         {
             AñadirOActualizarProducto("Apple");
+            ReproducirSonido("BotonSound.mp3");
         }
        
         private void ActualizarTotal()
@@ -155,7 +190,9 @@ namespace practica10fun2
             }
         }
     }
-    }
+    
+}
+    
 
 
     

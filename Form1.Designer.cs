@@ -39,9 +39,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -68,6 +68,7 @@
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelTotal = new System.Windows.Forms.Label();
             this.buttonActualizarTotal = new System.Windows.Forms.Button();
+            this.Apartado1 = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -183,15 +184,16 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 145);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 25);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Costo:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.YellowGreen;
+            this.label3.Location = new System.Drawing.Point(25, 170);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 25);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Esmeraldas";
             // 
             // label2
             // 
@@ -203,16 +205,15 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "$1";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.YellowGreen;
-            this.label3.Location = new System.Drawing.Point(25, 170);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 25);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Esmeraldas";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 145);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 25);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Costo:";
             // 
             // groupBox2
             // 
@@ -439,7 +440,7 @@
             this.Item,
             this.Precio,
             this.Cantidad});
-            this.dataGridView.Location = new System.Drawing.Point(791, 28);
+            this.dataGridView.Location = new System.Drawing.Point(1024, 27);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(346, 607);
             this.dataGridView.TabIndex = 10;
@@ -481,6 +482,14 @@
             this.buttonActualizarTotal.Visible = false;
             this.buttonActualizarTotal.Click += new System.EventHandler(this.buttonActualizarTotal_Click);
             // 
+            // Apartado1
+            // 
+            this.Apartado1.Location = new System.Drawing.Point(12, 102);
+            this.Apartado1.Name = "Apartado1";
+            this.Apartado1.Size = new System.Drawing.Size(1006, 479);
+            this.Apartado1.TabIndex = 13;
+            this.Apartado1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -497,6 +506,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.Apartado1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -567,6 +577,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.Button buttonActualizarTotal;
+        private System.Windows.Forms.GroupBox Apartado1;
     }
 }
 

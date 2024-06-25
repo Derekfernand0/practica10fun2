@@ -102,8 +102,9 @@
   <ItemGroup>
     <None Include="Resources\carrito de compras.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Sounds\" />
+    <Content Include="Sounds\BotonSound.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
