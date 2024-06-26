@@ -75,11 +75,28 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.Direccion = new System.Windows.Forms.GroupBox();
+            this.Cr = new System.Windows.Forms.Button();
+            this.AR = new System.Windows.Forms.Button();
+            this.tx_EA = new System.Windows.Forms.TextBox();
+            this.EA = new System.Windows.Forms.Label();
+            this.tx_Ra = new System.Windows.Forms.TextBox();
+            this.Ra = new System.Windows.Forms.Label();
+            this.tx_CZ = new System.Windows.Forms.TextBox();
+            this.CZ = new System.Windows.Forms.Label();
+            this.tx_CY = new System.Windows.Forms.TextBox();
+            this.CY = new System.Windows.Forms.Label();
+            this.tx_CX = new System.Windows.Forms.TextBox();
+            this.CX = new System.Windows.Forms.Label();
+            this.PayDay = new System.Windows.Forms.Button();
+            this.Pagofinal = new System.Windows.Forms.GroupBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.Pagar = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.crearCuentaNuevaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iniciarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarDirecciopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.ga = new System.Windows.Forms.PictureBox();
@@ -102,19 +119,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.zada = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.Direccion = new System.Windows.Forms.GroupBox();
-            this.Cr = new System.Windows.Forms.Button();
-            this.AR = new System.Windows.Forms.Button();
-            this.tx_EA = new System.Windows.Forms.TextBox();
-            this.EA = new System.Windows.Forms.Label();
-            this.tx_Ra = new System.Windows.Forms.TextBox();
-            this.Ra = new System.Windows.Forms.Label();
-            this.tx_CZ = new System.Windows.Forms.TextBox();
-            this.CZ = new System.Windows.Forms.Label();
-            this.tx_CY = new System.Windows.Forms.TextBox();
-            this.CY = new System.Windows.Forms.Label();
-            this.tx_CX = new System.Windows.Forms.TextBox();
-            this.CX = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -128,6 +132,8 @@
             this.groupBox10.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.Direccion.SuspendLayout();
+            this.Pagofinal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ga)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -149,7 +155,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zada)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.Direccion.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -432,6 +437,7 @@
             this.labelTotal.Size = new System.Drawing.Size(96, 25);
             this.labelTotal.TabIndex = 11;
             this.labelTotal.Text = "Total: $0";
+            this.labelTotal.Click += new System.EventHandler(this.labelTotal_Click);
             // 
             // Apartado1
             // 
@@ -671,6 +677,184 @@
             this.label18.TabIndex = 6;
             this.label18.Text = "Costo:";
             // 
+            // Direccion
+            // 
+            this.Direccion.Controls.Add(this.Cr);
+            this.Direccion.Controls.Add(this.AR);
+            this.Direccion.Controls.Add(this.tx_EA);
+            this.Direccion.Controls.Add(this.EA);
+            this.Direccion.Controls.Add(this.tx_Ra);
+            this.Direccion.Controls.Add(this.Ra);
+            this.Direccion.Controls.Add(this.tx_CZ);
+            this.Direccion.Controls.Add(this.CZ);
+            this.Direccion.Controls.Add(this.tx_CY);
+            this.Direccion.Controls.Add(this.CY);
+            this.Direccion.Controls.Add(this.tx_CX);
+            this.Direccion.Controls.Add(this.CX);
+            this.Direccion.Location = new System.Drawing.Point(119, 84);
+            this.Direccion.Name = "Direccion";
+            this.Direccion.Size = new System.Drawing.Size(751, 368);
+            this.Direccion.TabIndex = 14;
+            this.Direccion.TabStop = false;
+            this.Direccion.Visible = false;
+            // 
+            // Cr
+            // 
+            this.Cr.Location = new System.Drawing.Point(208, 298);
+            this.Cr.Name = "Cr";
+            this.Cr.Size = new System.Drawing.Size(128, 35);
+            this.Cr.TabIndex = 11;
+            this.Cr.Text = "Cancelar";
+            this.Cr.UseVisualStyleBackColor = true;
+            this.Cr.Click += new System.EventHandler(this.Cr_Click);
+            // 
+            // AR
+            // 
+            this.AR.Location = new System.Drawing.Point(401, 298);
+            this.AR.Name = "AR";
+            this.AR.Size = new System.Drawing.Size(128, 35);
+            this.AR.TabIndex = 10;
+            this.AR.Text = "Aceptar y continuar";
+            this.AR.UseVisualStyleBackColor = true;
+            this.AR.Click += new System.EventHandler(this.AR_Click);
+            // 
+            // tx_EA
+            // 
+            this.tx_EA.Location = new System.Drawing.Point(490, 211);
+            this.tx_EA.Name = "tx_EA";
+            this.tx_EA.Size = new System.Drawing.Size(160, 20);
+            this.tx_EA.TabIndex = 9;
+            // 
+            // EA
+            // 
+            this.EA.AutoSize = true;
+            this.EA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EA.Location = new System.Drawing.Point(420, 154);
+            this.EA.Name = "EA";
+            this.EA.Size = new System.Drawing.Size(318, 24);
+            this.EA.TabIndex = 8;
+            this.EA.Text = "en caso de no responder entregar a:";
+            // 
+            // tx_Ra
+            // 
+            this.tx_Ra.Location = new System.Drawing.Point(64, 211);
+            this.tx_Ra.Name = "tx_Ra";
+            this.tx_Ra.Size = new System.Drawing.Size(160, 20);
+            this.tx_Ra.TabIndex = 7;
+            // 
+            // Ra
+            // 
+            this.Ra.AutoSize = true;
+            this.Ra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ra.Location = new System.Drawing.Point(96, 154);
+            this.Ra.Name = "Ra";
+            this.Ra.Size = new System.Drawing.Size(101, 24);
+            this.Ra.TabIndex = 6;
+            this.Ra.Text = "Referencia";
+            // 
+            // tx_CZ
+            // 
+            this.tx_CZ.Location = new System.Drawing.Point(562, 64);
+            this.tx_CZ.Name = "tx_CZ";
+            this.tx_CZ.Size = new System.Drawing.Size(160, 20);
+            this.tx_CZ.TabIndex = 5;
+            // 
+            // CZ
+            // 
+            this.CZ.AutoSize = true;
+            this.CZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CZ.Location = new System.Drawing.Point(528, 19);
+            this.CZ.Name = "CZ";
+            this.CZ.Size = new System.Drawing.Size(221, 24);
+            this.CZ.TabIndex = 4;
+            this.CZ.Text = "Coordenada Z (opcional)";
+            // 
+            // tx_CY
+            // 
+            this.tx_CY.Location = new System.Drawing.Point(282, 64);
+            this.tx_CY.Name = "tx_CY";
+            this.tx_CY.Size = new System.Drawing.Size(160, 20);
+            this.tx_CY.TabIndex = 3;
+            // 
+            // CY
+            // 
+            this.CY.AutoSize = true;
+            this.CY.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CY.Location = new System.Drawing.Point(292, 19);
+            this.CY.Name = "CY";
+            this.CY.Size = new System.Drawing.Size(132, 24);
+            this.CY.TabIndex = 2;
+            this.CY.Text = "Coordenada Y";
+            // 
+            // tx_CX
+            // 
+            this.tx_CX.Location = new System.Drawing.Point(17, 55);
+            this.tx_CX.Name = "tx_CX";
+            this.tx_CX.Size = new System.Drawing.Size(160, 20);
+            this.tx_CX.TabIndex = 1;
+            // 
+            // CX
+            // 
+            this.CX.AutoSize = true;
+            this.CX.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CX.Location = new System.Drawing.Point(29, 19);
+            this.CX.Name = "CX";
+            this.CX.Size = new System.Drawing.Size(134, 24);
+            this.CX.TabIndex = 0;
+            this.CX.Text = "Coordenada X";
+            // 
+            // PayDay
+            // 
+            this.PayDay.Location = new System.Drawing.Point(1035, 586);
+            this.PayDay.Name = "PayDay";
+            this.PayDay.Size = new System.Drawing.Size(93, 40);
+            this.PayDay.TabIndex = 15;
+            this.PayDay.Text = "Pasar a pagar";
+            this.PayDay.UseVisualStyleBackColor = true;
+            this.PayDay.Visible = false;
+            this.PayDay.Click += new System.EventHandler(this.PayDay_Click);
+            // 
+            // Pagofinal
+            // 
+            this.Pagofinal.Controls.Add(this.label31);
+            this.Pagofinal.Controls.Add(this.Pagar);
+            this.Pagofinal.Controls.Add(this.button1);
+            this.Pagofinal.Location = new System.Drawing.Point(339, 71);
+            this.Pagofinal.Name = "Pagofinal";
+            this.Pagofinal.Size = new System.Drawing.Size(336, 274);
+            this.Pagofinal.TabIndex = 16;
+            this.Pagofinal.TabStop = false;
+            this.Pagofinal.Visible = false;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(6, 16);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(320, 55);
+            this.label31.TabIndex = 1;
+            this.label31.Text = "Total a pagar:";
+            // 
+            // Pagar
+            // 
+            this.Pagar.AutoSize = true;
+            this.Pagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pagar.Location = new System.Drawing.Point(56, 98);
+            this.Pagar.Name = "Pagar";
+            this.Pagar.Size = new System.Drawing.Size(0, 33);
+            this.Pagar.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(102, 187);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 53);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Confirmar y pagar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::practica10fun2.Properties.Resources.Pilincraft_20_6_2024;
@@ -685,8 +869,7 @@
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.crearCuentaNuevaToolStripMenuItem,
-            this.iniciarSesionToolStripMenuItem,
-            this.cerrarSesionToolStripMenuItem});
+            this.iniciarSesionToolStripMenuItem});
             this.toolStripMenuItem1.Image = global::practica10fun2.Properties.Resources.inicio_de_sesion;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(73, 20);
@@ -706,13 +889,6 @@
             this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.iniciarSesionToolStripMenuItem.Text = "Iniciar sesion";
             this.iniciarSesionToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesionToolStripMenuItem_Click);
-            // 
-            // cerrarSesionToolStripMenuItem
-            // 
-            this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.cerrarSesionToolStripMenuItem.Text = "Cerrar sesion";
-            this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // agregarDirecciopToolStripMenuItem
             // 
@@ -954,137 +1130,14 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.DoubleClick += new System.EventHandler(this.GCrrt);
             // 
-            // Direccion
-            // 
-            this.Direccion.Controls.Add(this.Cr);
-            this.Direccion.Controls.Add(this.AR);
-            this.Direccion.Controls.Add(this.tx_EA);
-            this.Direccion.Controls.Add(this.EA);
-            this.Direccion.Controls.Add(this.tx_Ra);
-            this.Direccion.Controls.Add(this.Ra);
-            this.Direccion.Controls.Add(this.tx_CZ);
-            this.Direccion.Controls.Add(this.CZ);
-            this.Direccion.Controls.Add(this.tx_CY);
-            this.Direccion.Controls.Add(this.CY);
-            this.Direccion.Controls.Add(this.tx_CX);
-            this.Direccion.Controls.Add(this.CX);
-            this.Direccion.Location = new System.Drawing.Point(119, 84);
-            this.Direccion.Name = "Direccion";
-            this.Direccion.Size = new System.Drawing.Size(751, 368);
-            this.Direccion.TabIndex = 14;
-            this.Direccion.TabStop = false;
-            this.Direccion.Visible = false;
-            // 
-            // Cr
-            // 
-            this.Cr.Location = new System.Drawing.Point(208, 298);
-            this.Cr.Name = "Cr";
-            this.Cr.Size = new System.Drawing.Size(128, 35);
-            this.Cr.TabIndex = 11;
-            this.Cr.Text = "Cancelar";
-            this.Cr.UseVisualStyleBackColor = true;
-            // 
-            // AR
-            // 
-            this.AR.Location = new System.Drawing.Point(401, 298);
-            this.AR.Name = "AR";
-            this.AR.Size = new System.Drawing.Size(128, 35);
-            this.AR.TabIndex = 10;
-            this.AR.Text = "Aceptar y continuar";
-            this.AR.UseVisualStyleBackColor = true;
-            this.AR.Click += new System.EventHandler(this.AR_Click);
-            // 
-            // tx_EA
-            // 
-            this.tx_EA.Location = new System.Drawing.Point(490, 211);
-            this.tx_EA.Name = "tx_EA";
-            this.tx_EA.Size = new System.Drawing.Size(160, 20);
-            this.tx_EA.TabIndex = 9;
-            // 
-            // EA
-            // 
-            this.EA.AutoSize = true;
-            this.EA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EA.Location = new System.Drawing.Point(420, 154);
-            this.EA.Name = "EA";
-            this.EA.Size = new System.Drawing.Size(318, 24);
-            this.EA.TabIndex = 8;
-            this.EA.Text = "en caso de no responder entregar a:";
-            // 
-            // tx_Ra
-            // 
-            this.tx_Ra.Location = new System.Drawing.Point(64, 211);
-            this.tx_Ra.Name = "tx_Ra";
-            this.tx_Ra.Size = new System.Drawing.Size(160, 20);
-            this.tx_Ra.TabIndex = 7;
-            // 
-            // Ra
-            // 
-            this.Ra.AutoSize = true;
-            this.Ra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ra.Location = new System.Drawing.Point(96, 154);
-            this.Ra.Name = "Ra";
-            this.Ra.Size = new System.Drawing.Size(101, 24);
-            this.Ra.TabIndex = 6;
-            this.Ra.Text = "Referencia";
-            // 
-            // tx_CZ
-            // 
-            this.tx_CZ.Location = new System.Drawing.Point(562, 64);
-            this.tx_CZ.Name = "tx_CZ";
-            this.tx_CZ.Size = new System.Drawing.Size(160, 20);
-            this.tx_CZ.TabIndex = 5;
-            // 
-            // CZ
-            // 
-            this.CZ.AutoSize = true;
-            this.CZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CZ.Location = new System.Drawing.Point(528, 19);
-            this.CZ.Name = "CZ";
-            this.CZ.Size = new System.Drawing.Size(221, 24);
-            this.CZ.TabIndex = 4;
-            this.CZ.Text = "Coordenada Z (opcional)";
-            // 
-            // tx_CY
-            // 
-            this.tx_CY.Location = new System.Drawing.Point(282, 64);
-            this.tx_CY.Name = "tx_CY";
-            this.tx_CY.Size = new System.Drawing.Size(160, 20);
-            this.tx_CY.TabIndex = 3;
-            // 
-            // CY
-            // 
-            this.CY.AutoSize = true;
-            this.CY.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CY.Location = new System.Drawing.Point(292, 19);
-            this.CY.Name = "CY";
-            this.CY.Size = new System.Drawing.Size(132, 24);
-            this.CY.TabIndex = 2;
-            this.CY.Text = "Coordenada Y";
-            // 
-            // tx_CX
-            // 
-            this.tx_CX.Location = new System.Drawing.Point(17, 55);
-            this.tx_CX.Name = "tx_CX";
-            this.tx_CX.Size = new System.Drawing.Size(160, 20);
-            this.tx_CX.TabIndex = 1;
-            // 
-            // CX
-            // 
-            this.CX.AutoSize = true;
-            this.CX.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CX.Location = new System.Drawing.Point(29, 19);
-            this.CX.Name = "CX";
-            this.CX.Size = new System.Drawing.Size(134, 24);
-            this.CX.TabIndex = 0;
-            this.CX.Text = "Coordenada X";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(1149, 647);
+            this.Controls.Add(this.Pagofinal);
+            this.Controls.Add(this.PayDay);
             this.Controls.Add(this.Direccion);
             this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.dataGridView);
@@ -1119,6 +1172,10 @@
             this.groupBox8.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.Direccion.ResumeLayout(false);
+            this.Direccion.PerformLayout();
+            this.Pagofinal.ResumeLayout(false);
+            this.Pagofinal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ga)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -1140,8 +1197,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zada)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.Direccion.ResumeLayout(false);
-            this.Direccion.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1154,7 +1209,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem crearCuentaNuevaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iniciarSesionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarDirecciopToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -1236,6 +1290,11 @@
         private System.Windows.Forms.Label CY;
         private System.Windows.Forms.TextBox tx_CX;
         private System.Windows.Forms.Label CX;
+        private System.Windows.Forms.Button PayDay;
+        private System.Windows.Forms.GroupBox Pagofinal;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label Pagar;
+        private System.Windows.Forms.Button button1;
     }
 }
 

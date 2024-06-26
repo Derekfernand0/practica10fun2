@@ -16,6 +16,7 @@ namespace practica10fun2
     {
 
         private Timer timer;
+        private List <Form1> Locate = new List<Form1>();
 
         private Dictionary<string, ListaProductos> productos;
 
@@ -79,6 +80,7 @@ namespace practica10fun2
             Apartado1.Visible = false;
             dataGridView.Visible = false;
             menuStrip1.Visible = false;
+            labelTotal.Visible = false;
 
             //mostrar
 
@@ -96,6 +98,7 @@ namespace practica10fun2
                 // Cambiar la visibilidad del DataGridView
                 dataGridView.Visible = !dataGridView.Visible;
                 labelTotal.Visible = !labelTotal.Visible;
+                PayDay.Visible = !PayDay.Visible;
 
                 // Cambiar el texto del botón según la visibilidad
                 if (dataGridView.Visible)
@@ -188,6 +191,7 @@ namespace practica10fun2
             }
 
             labelTotal.Text = $"Total: ${total:F2}";
+            Pagar.Text = $"Total: ${total:F2}";
         }
 
         private void buttonActualizarTotal_Click(object sender, EventArgs e)
@@ -316,11 +320,65 @@ namespace practica10fun2
 
         private void AR_Click(object sender, EventArgs e)
         {
+            
             cx = tx_CX.Text;
             cy = tx_CY.Text;
             cz = tx_CZ.Text;
             ra = tx_Ra.Text;
             ea = tx_EA.Text;
+
+            Form1 L = new Form1();
+            L.cx = cx; L.cy = cy; L.cz = cz; L.ra = ra; L.ea = ea;
+            Locate.Add(L);
+            tx_CX.Text = "";
+            tx_CY.Text = "";
+            tx_CZ.Text = "";
+            tx_EA.Text = "";
+            tx_Ra.Text = "";
+
+
+            Apartado1.Visible = true;
+            menuStrip1.Visible = true;
+            Direccion.Visible = false;
+        }
+
+        private void Cr_Click(object sender, EventArgs e)
+        {
+
+            Apartado1.Visible = true;
+            menuStrip1.Visible = true;
+            Direccion.Visible = false;
+            
+        }
+
+        private void PayDay_Click(object sender, EventArgs e)
+        {
+            Pagofinal.Visible = true;
+
+            Apartado1.Visible = false;
+            dataGridView.Visible = false;
+            menuStrip1.Visible = false;
+            labelTotal.Visible = false;
+            PayDay.Visible = false;
+        }
+
+        private void labelTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("pago completado, su paquete sera entregado pronto." +
+                "tu direccion sera enviada al repartidor" +
+                "!!!en caso de no tener direccion el paquete no sera entregado¡¡¡" +
+                "Gracias por comprar");
+
+            Apartado1.Visible = true;
+            menuStrip1.Visible = true;
+
+            Pagofinal.Visible = false;
+            
         }
     }
     
