@@ -55,19 +55,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="inicioDeSesion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="inicioDeSesion.Designer.cs">
-      <DependentUpon>inicioDeSesion.cs</DependentUpon>
-    </Compile>
     <Compile Include="ListaProductos.cs" />
-    <Compile Include="NuevaCuenta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NuevaCuenta.Designer.cs">
-      <DependentUpon>NuevaCuenta.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pagos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,12 +63,6 @@
     <Compile Include="targeta.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="inicioDeSesion.resx">
-      <DependentUpon>inicioDeSesion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NuevaCuenta.resx">
-      <DependentUpon>NuevaCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -268,25 +268,6 @@ namespace practica10fun2
 
             timer.Stop();
         }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iniciarSesionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            inicioDeSesion form1 = new inicioDeSesion();//si es correcto pasar al formilario
-            form1.Show();
-            this.Hide();
-        }
-
-        private void crearCuentaNuevaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            NuevaCuenta form1 = new NuevaCuenta();//si es correcto pasar al formilario
-            form1.Show();
-            this.Hide();
-        }
     }
     
 }
