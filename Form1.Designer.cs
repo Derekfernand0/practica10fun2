@@ -119,6 +119,16 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.zada = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.InicioAdmin = new System.Windows.Forms.GroupBox();
+            this.mostrarContraseña = new System.Windows.Forms.CheckBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label32 = new System.Windows.Forms.Label();
+            this.tx_acontraseña = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.tx_ausuario = new System.Windows.Forms.TextBox();
+            this.Datos = new System.Windows.Forms.DataGridView();
+            this.label34 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -155,6 +165,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zada)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.InicioAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Datos)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -394,6 +406,7 @@
             // 
             // dataGridView
             // 
+            this.dataGridView.AllowUserToResizeRows = false;
             this.dataGridView.BackgroundColor = System.Drawing.Color.DarkOrange;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -869,7 +882,8 @@
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.crearCuentaNuevaToolStripMenuItem,
-            this.iniciarSesionToolStripMenuItem});
+            this.iniciarSesionToolStripMenuItem,
+            this.adminToolStripMenuItem});
             this.toolStripMenuItem1.Image = global::practica10fun2.Properties.Resources.inicio_de_sesion;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(73, 20);
@@ -879,14 +893,14 @@
             // crearCuentaNuevaToolStripMenuItem
             // 
             this.crearCuentaNuevaToolStripMenuItem.Name = "crearCuentaNuevaToolStripMenuItem";
-            this.crearCuentaNuevaToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.crearCuentaNuevaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.crearCuentaNuevaToolStripMenuItem.Text = "Crear cuenta nueva";
             this.crearCuentaNuevaToolStripMenuItem.Click += new System.EventHandler(this.crearCuentaNuevaToolStripMenuItem_Click);
             // 
             // iniciarSesionToolStripMenuItem
             // 
             this.iniciarSesionToolStripMenuItem.Name = "iniciarSesionToolStripMenuItem";
-            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.iniciarSesionToolStripMenuItem.Text = "Iniciar sesion";
             this.iniciarSesionToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesionToolStripMenuItem_Click);
             // 
@@ -1130,12 +1144,125 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.DoubleClick += new System.EventHandler(this.GCrrt);
             // 
+            // adminToolStripMenuItem
+            // 
+            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adminToolStripMenuItem.Text = "Admin";
+            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
+            // 
+            // InicioAdmin
+            // 
+            this.InicioAdmin.Controls.Add(this.label34);
+            this.InicioAdmin.Controls.Add(this.mostrarContraseña);
+            this.InicioAdmin.Controls.Add(this.button2);
+            this.InicioAdmin.Controls.Add(this.label32);
+            this.InicioAdmin.Controls.Add(this.tx_acontraseña);
+            this.InicioAdmin.Controls.Add(this.label33);
+            this.InicioAdmin.Controls.Add(this.tx_ausuario);
+            this.InicioAdmin.Location = new System.Drawing.Point(4, 81);
+            this.InicioAdmin.Name = "InicioAdmin";
+            this.InicioAdmin.Size = new System.Drawing.Size(317, 371);
+            this.InicioAdmin.TabIndex = 25;
+            this.InicioAdmin.TabStop = false;
+            this.InicioAdmin.Visible = false;
+            // 
+            // mostrarContraseña
+            // 
+            this.mostrarContraseña.AutoSize = true;
+            this.mostrarContraseña.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mostrarContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.mostrarContraseña.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.mostrarContraseña.Location = new System.Drawing.Point(25, 202);
+            this.mostrarContraseña.Margin = new System.Windows.Forms.Padding(2);
+            this.mostrarContraseña.Name = "mostrarContraseña";
+            this.mostrarContraseña.Size = new System.Drawing.Size(158, 22);
+            this.mostrarContraseña.TabIndex = 23;
+            this.mostrarContraseña.Text = "Mostrar Contraseña";
+            this.mostrarContraseña.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(29, 248);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(247, 99);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Iniciar Admin";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label32.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label32.Location = new System.Drawing.Point(21, 114);
+            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(92, 20);
+            this.label32.TabIndex = 22;
+            this.label32.Text = "Contraseña";
+            // 
+            // tx_acontraseña
+            // 
+            this.tx_acontraseña.Location = new System.Drawing.Point(25, 152);
+            this.tx_acontraseña.Margin = new System.Windows.Forms.Padding(2);
+            this.tx_acontraseña.Name = "tx_acontraseña";
+            this.tx_acontraseña.PasswordChar = '*';
+            this.tx_acontraseña.Size = new System.Drawing.Size(272, 20);
+            this.tx_acontraseña.TabIndex = 19;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label33.Location = new System.Drawing.Point(25, 30);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(64, 20);
+            this.label33.TabIndex = 21;
+            this.label33.Text = "Usuario";
+            // 
+            // tx_ausuario
+            // 
+            this.tx_ausuario.Location = new System.Drawing.Point(25, 73);
+            this.tx_ausuario.Margin = new System.Windows.Forms.Padding(2);
+            this.tx_ausuario.Name = "tx_ausuario";
+            this.tx_ausuario.Size = new System.Drawing.Size(272, 20);
+            this.tx_ausuario.TabIndex = 18;
+            // 
+            // Datos
+            // 
+            this.Datos.BackgroundColor = System.Drawing.Color.DarkTurquoise;
+            this.Datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Datos.Location = new System.Drawing.Point(334, 40);
+            this.Datos.Name = "Datos";
+            this.Datos.Size = new System.Drawing.Size(650, 595);
+            this.Datos.TabIndex = 26;
+            this.Datos.Visible = false;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(5, 349);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(37, 13);
+            this.label34.TabIndex = 24;
+            this.label34.Text = "Volver";
+            this.label34.Click += new System.EventHandler(this.label34_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(1149, 647);
+            this.Controls.Add(this.Datos);
+            this.Controls.Add(this.InicioAdmin);
             this.Controls.Add(this.Pagofinal);
             this.Controls.Add(this.PayDay);
             this.Controls.Add(this.Direccion);
@@ -1197,6 +1324,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zada)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.InicioAdmin.ResumeLayout(false);
+            this.InicioAdmin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Datos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1295,6 +1425,16 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label Pagar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
+        private System.Windows.Forms.GroupBox InicioAdmin;
+        private System.Windows.Forms.CheckBox mostrarContraseña;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox tx_acontraseña;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox tx_ausuario;
+        private System.Windows.Forms.DataGridView Datos;
+        private System.Windows.Forms.Label label34;
     }
 }
 

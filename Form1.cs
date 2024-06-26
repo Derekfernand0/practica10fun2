@@ -320,7 +320,7 @@ namespace practica10fun2
 
         private void AR_Click(object sender, EventArgs e)
         {
-            
+            Datos.DataSource = null;
             cx = tx_CX.Text;
             cy = tx_CY.Text;
             cz = tx_CZ.Text;
@@ -335,6 +335,7 @@ namespace practica10fun2
             tx_CZ.Text = "";
             tx_EA.Text = "";
             tx_Ra.Text = "";
+            Datos.DataSource = Locate;
 
 
             Apartado1.Visible = true;
@@ -379,6 +380,67 @@ namespace practica10fun2
 
             Pagofinal.Visible = false;
             
+        }
+
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InicioAdmin.Visible = true;
+            Apartado1.Visible = false;
+            dataGridView.Visible = false;
+            menuStrip1.Visible = false;
+            labelTotal.Visible = false;
+            PayDay.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string nombre = "Derek";//ususario
+            string password = "yy130808";//contraseña del usuario correspondiente
+            string nombre2 = "Alex";//ususario
+            string password2 = "1327";//contraseña del usuario correspondiente
+            string nombre3 = "Axel";//ususario
+            string password3 = "1234";//contraseña del usuario correspondiente
+            string nombre4 = "Carlos";//ususario
+            string password4 = "1234";//contraseña del usuario correspondiente
+            if (!string.IsNullOrEmpty(tx_ausuario.Text) && !string.IsNullOrEmpty(tx_acontraseña.Text))//comprobar si hay algo en los textbox
+            {
+                if ((tx_ausuario.Text == nombre && tx_acontraseña.Text == password) ||//comprobar contraseñas de los ususarios
+        (tx_ausuario.Text == nombre2 && tx_acontraseña.Text == password2) ||
+        (tx_ausuario.Text == nombre3 && tx_acontraseña.Text == password3) ||
+        (tx_ausuario.Text == nombre4 && tx_acontraseña.Text == password4))
+                {
+                    Datos.Visible = true;
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectos. Inténtalo de nuevo.❌");//si no, mostrar cuadro de texto
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingresa usuario y contraseña😃.");//si no mostrar cuadro de texto
+            }
+        }
+
+        private void mostrarContraseña_CheckedChanged(object sender, EventArgs e)
+        {
+            if (mostrarContraseña.Checked)//comprovar si esta o no marcado el cuiadro de lista
+            {
+                tx_acontraseña.PasswordChar = '\0'; // Mostrar texto
+            }
+            else
+            {
+                tx_acontraseña.PasswordChar = '*'; // Ocultar texto con *
+            }
+        }
+
+        private void label34_Click(object sender, EventArgs e)
+        {
+            Datos.Visible = false;
+            InicioAdmin.Visible = false;
+
+            menuStrip1.Visible = true;
+            Apartado1.Visible = true;
         }
     }
     
