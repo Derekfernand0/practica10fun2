@@ -79,6 +79,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SistemaEnvio.cs" />
     <Compile Include="targeta.cs" />
+    <EmbeddedResource Include="Direccion.resx">
+      <DependentUpon>Direccion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
