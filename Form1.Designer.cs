@@ -75,7 +75,6 @@
             this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ma = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.crearCuentaNuevaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,25 +83,26 @@
             this.inicioAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarDirecciopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.ho = new System.Windows.Forms.PictureBox();
-            this.de = new System.Windows.Forms.PictureBox();
-            this.cs = new System.Windows.Forms.PictureBox();
-            this.maea = new System.Windows.Forms.PictureBox();
-            this.aa = new System.Windows.Forms.PictureBox();
-            this.mada = new System.Windows.Forms.PictureBox();
-            this.to = new System.Windows.Forms.PictureBox();
-            this.zada = new System.Windows.Forms.PictureBox();
             this.ga = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.cs = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.aa = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.ma = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.to = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.de = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.maea = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.mada = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.ho = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.zada = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -116,27 +116,27 @@
             this.groupBox10.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ho)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.de)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cs)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maea)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mada)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.to)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zada)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ga)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ma)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.to)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.de)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maea)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mada)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zada)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -383,7 +383,7 @@
             this.Precio,
             this.Cantidad});
             this.dataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridView.Location = new System.Drawing.Point(1024, 28);
+            this.dataGridView.Location = new System.Drawing.Point(791, 41);
             this.dataGridView.MultiSelect = false;
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersVisible = false;
@@ -658,17 +658,6 @@
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.Width = 115;
             // 
-            // ma
-            // 
-            this.ma.Image = global::practica10fun2.Properties.Resources.flechit;
-            this.ma.Location = new System.Drawing.Point(140, 130);
-            this.ma.Name = "ma";
-            this.ma.Size = new System.Drawing.Size(41, 40);
-            this.ma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ma.TabIndex = 14;
-            this.ma.TabStop = false;
-            this.ma.Visible = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::practica10fun2.Properties.Resources.Pilincraft_20_6_2024;
@@ -690,29 +679,32 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(73, 20);
             this.toolStripMenuItem1.Text = "Cuenta";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // crearCuentaNuevaToolStripMenuItem
             // 
             this.crearCuentaNuevaToolStripMenuItem.Name = "crearCuentaNuevaToolStripMenuItem";
-            this.crearCuentaNuevaToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.crearCuentaNuevaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.crearCuentaNuevaToolStripMenuItem.Text = "Crear cuenta nueva";
+            this.crearCuentaNuevaToolStripMenuItem.Click += new System.EventHandler(this.crearCuentaNuevaToolStripMenuItem_Click);
             // 
             // iniciarSesionToolStripMenuItem
             // 
             this.iniciarSesionToolStripMenuItem.Name = "iniciarSesionToolStripMenuItem";
-            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.iniciarSesionToolStripMenuItem.Text = "Iniciar sesion";
+            this.iniciarSesionToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesionToolStripMenuItem_Click);
             // 
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar sesion";
             // 
             // inicioAdminToolStripMenuItem
             // 
             this.inicioAdminToolStripMenuItem.Name = "inicioAdminToolStripMenuItem";
-            this.inicioAdminToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.inicioAdminToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.inicioAdminToolStripMenuItem.Text = "Inicio Admin";
             // 
             // agregarDirecciopToolStripMenuItem
@@ -732,6 +724,17 @@
             this.toolStripMenuItem2.Text = " ";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
+            // ga
+            // 
+            this.ga.Image = global::practica10fun2.Properties.Resources.flechit;
+            this.ga.Location = new System.Drawing.Point(140, 127);
+            this.ga.Name = "ga";
+            this.ga.Size = new System.Drawing.Size(41, 40);
+            this.ga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ga.TabIndex = 20;
+            this.ga.TabStop = false;
+            this.ga.Visible = false;
+            // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::practica10fun2.Properties.Resources.grava;
@@ -742,6 +745,17 @@
             this.pictureBox11.TabIndex = 4;
             this.pictureBox11.TabStop = false;
             this.pictureBox11.DoubleClick += new System.EventHandler(this.grava);
+            // 
+            // cs
+            // 
+            this.cs.Image = global::practica10fun2.Properties.Resources.flechit;
+            this.cs.Location = new System.Drawing.Point(140, 130);
+            this.cs.Name = "cs";
+            this.cs.Size = new System.Drawing.Size(41, 40);
+            this.cs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cs.TabIndex = 17;
+            this.cs.TabStop = false;
+            this.cs.Visible = false;
             // 
             // pictureBox9
             // 
@@ -754,6 +768,17 @@
             this.pictureBox9.TabStop = false;
             this.pictureBox9.DoubleClick += new System.EventHandler(this.cactus);
             // 
+            // aa
+            // 
+            this.aa.Image = global::practica10fun2.Properties.Resources.flechit;
+            this.aa.Location = new System.Drawing.Point(140, 130);
+            this.aa.Name = "aa";
+            this.aa.Size = new System.Drawing.Size(41, 40);
+            this.aa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.aa.TabIndex = 19;
+            this.aa.TabStop = false;
+            this.aa.Visible = false;
+            // 
             // pictureBox10
             // 
             this.pictureBox10.Image = global::practica10fun2.Properties.Resources.arena;
@@ -764,6 +789,17 @@
             this.pictureBox10.TabIndex = 4;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.DoubleClick += new System.EventHandler(this.arena);
+            // 
+            // ma
+            // 
+            this.ma.Image = global::practica10fun2.Properties.Resources.flechit;
+            this.ma.Location = new System.Drawing.Point(140, 130);
+            this.ma.Name = "ma";
+            this.ma.Size = new System.Drawing.Size(41, 40);
+            this.ma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ma.TabIndex = 14;
+            this.ma.TabStop = false;
+            this.ma.Visible = false;
             // 
             // pictureBox2
             // 
@@ -777,6 +813,17 @@
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             this.pictureBox2.DoubleClick += new System.EventHandler(this.Apple);
             // 
+            // to
+            // 
+            this.to.Image = global::practica10fun2.Properties.Resources.flechit;
+            this.to.Location = new System.Drawing.Point(140, 127);
+            this.to.Name = "to";
+            this.to.Size = new System.Drawing.Size(41, 40);
+            this.to.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.to.TabIndex = 20;
+            this.to.TabStop = false;
+            this.to.Visible = false;
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::practica10fun2.Properties.Resources.trigo;
@@ -787,6 +834,17 @@
             this.pictureBox8.TabIndex = 4;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.DoubleClick += new System.EventHandler(this.trigo);
+            // 
+            // de
+            // 
+            this.de.Image = global::practica10fun2.Properties.Resources.flechit;
+            this.de.Location = new System.Drawing.Point(140, 127);
+            this.de.Name = "de";
+            this.de.Size = new System.Drawing.Size(41, 40);
+            this.de.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.de.TabIndex = 16;
+            this.de.TabStop = false;
+            this.de.Visible = false;
             // 
             // pictureBox3
             // 
@@ -800,6 +858,17 @@
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             this.pictureBox3.DoubleClick += new System.EventHandler(this.Dmnd);
             // 
+            // maea
+            // 
+            this.maea.Image = global::practica10fun2.Properties.Resources.flechit;
+            this.maea.Location = new System.Drawing.Point(146, 127);
+            this.maea.Name = "maea";
+            this.maea.Size = new System.Drawing.Size(41, 40);
+            this.maea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.maea.TabIndex = 18;
+            this.maea.TabStop = false;
+            this.maea.Visible = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::practica10fun2.Properties.Resources.enchant_golden_apple;
@@ -811,6 +880,17 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.DoubleClick += new System.EventHandler(this.EGA);
             // 
+            // mada
+            // 
+            this.mada.Image = global::practica10fun2.Properties.Resources.flechit;
+            this.mada.Location = new System.Drawing.Point(140, 130);
+            this.mada.Name = "mada";
+            this.mada.Size = new System.Drawing.Size(41, 40);
+            this.mada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mada.TabIndex = 20;
+            this.mada.TabStop = false;
+            this.mada.Visible = false;
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::practica10fun2.Properties.Resources.golden_apple;
@@ -821,6 +901,17 @@
             this.pictureBox6.TabIndex = 4;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.DoubleClick += new System.EventHandler(this.GnApp);
+            // 
+            // ho
+            // 
+            this.ho.Image = global::practica10fun2.Properties.Resources.flechit;
+            this.ho.Location = new System.Drawing.Point(140, 127);
+            this.ho.Name = "ho";
+            this.ho.Size = new System.Drawing.Size(41, 40);
+            this.ho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ho.TabIndex = 15;
+            this.ho.TabStop = false;
+            this.ho.Visible = false;
             // 
             // pictureBox7
             // 
@@ -834,94 +925,6 @@
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             this.pictureBox7.DoubleClick += new System.EventHandler(this.hierro);
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::practica10fun2.Properties.Resources.golden_carrot;
-            this.pictureBox5.Location = new System.Drawing.Point(30, 19);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(129, 123);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.DoubleClick += new System.EventHandler(this.GCrrt);
-            // 
-            // ho
-            // 
-            this.ho.Image = global::practica10fun2.Properties.Resources.flechit;
-            this.ho.Location = new System.Drawing.Point(140, 127);
-            this.ho.Name = "ho";
-            this.ho.Size = new System.Drawing.Size(41, 40);
-            this.ho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ho.TabIndex = 15;
-            this.ho.TabStop = false;
-            this.ho.Visible = false;
-            // 
-            // de
-            // 
-            this.de.Image = global::practica10fun2.Properties.Resources.flechit;
-            this.de.Location = new System.Drawing.Point(140, 127);
-            this.de.Name = "de";
-            this.de.Size = new System.Drawing.Size(41, 40);
-            this.de.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.de.TabIndex = 16;
-            this.de.TabStop = false;
-            this.de.Visible = false;
-            // 
-            // cs
-            // 
-            this.cs.Image = global::practica10fun2.Properties.Resources.flechit;
-            this.cs.Location = new System.Drawing.Point(140, 130);
-            this.cs.Name = "cs";
-            this.cs.Size = new System.Drawing.Size(41, 40);
-            this.cs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cs.TabIndex = 17;
-            this.cs.TabStop = false;
-            this.cs.Visible = false;
-            // 
-            // maea
-            // 
-            this.maea.Image = global::practica10fun2.Properties.Resources.flechit;
-            this.maea.Location = new System.Drawing.Point(146, 127);
-            this.maea.Name = "maea";
-            this.maea.Size = new System.Drawing.Size(41, 40);
-            this.maea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.maea.TabIndex = 18;
-            this.maea.TabStop = false;
-            this.maea.Visible = false;
-            // 
-            // aa
-            // 
-            this.aa.Image = global::practica10fun2.Properties.Resources.flechit;
-            this.aa.Location = new System.Drawing.Point(140, 130);
-            this.aa.Name = "aa";
-            this.aa.Size = new System.Drawing.Size(41, 40);
-            this.aa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aa.TabIndex = 19;
-            this.aa.TabStop = false;
-            this.aa.Visible = false;
-            // 
-            // mada
-            // 
-            this.mada.Image = global::practica10fun2.Properties.Resources.flechit;
-            this.mada.Location = new System.Drawing.Point(140, 130);
-            this.mada.Name = "mada";
-            this.mada.Size = new System.Drawing.Size(41, 40);
-            this.mada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.mada.TabIndex = 20;
-            this.mada.TabStop = false;
-            this.mada.Visible = false;
-            // 
-            // to
-            // 
-            this.to.Image = global::practica10fun2.Properties.Resources.flechit;
-            this.to.Location = new System.Drawing.Point(140, 127);
-            this.to.Name = "to";
-            this.to.Size = new System.Drawing.Size(41, 40);
-            this.to.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.to.TabIndex = 20;
-            this.to.TabStop = false;
-            this.to.Visible = false;
-            // 
             // zada
             // 
             this.zada.Image = global::practica10fun2.Properties.Resources.flechit;
@@ -933,16 +936,16 @@
             this.zada.TabStop = false;
             this.zada.Visible = false;
             // 
-            // ga
+            // pictureBox5
             // 
-            this.ga.Image = global::practica10fun2.Properties.Resources.flechit;
-            this.ga.Location = new System.Drawing.Point(140, 127);
-            this.ga.Name = "ga";
-            this.ga.Size = new System.Drawing.Size(41, 40);
-            this.ga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ga.TabIndex = 20;
-            this.ga.TabStop = false;
-            this.ga.Visible = false;
+            this.pictureBox5.Image = global::practica10fun2.Properties.Resources.golden_carrot;
+            this.pictureBox5.Location = new System.Drawing.Point(30, 19);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(129, 123);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.DoubleClick += new System.EventHandler(this.GCrrt);
             // 
             // Form1
             // 
@@ -983,27 +986,27 @@
             this.groupBox8.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ho)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.de)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cs)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maea)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mada)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.to)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zada)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ga)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ma)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.to)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.de)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maea)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mada)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ho)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zada)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
