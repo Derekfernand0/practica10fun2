@@ -102,6 +102,19 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.zada = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.Direccion = new System.Windows.Forms.GroupBox();
+            this.Cr = new System.Windows.Forms.Button();
+            this.AR = new System.Windows.Forms.Button();
+            this.tx_EA = new System.Windows.Forms.TextBox();
+            this.EA = new System.Windows.Forms.Label();
+            this.tx_Ra = new System.Windows.Forms.TextBox();
+            this.Ra = new System.Windows.Forms.Label();
+            this.tx_CZ = new System.Windows.Forms.TextBox();
+            this.CZ = new System.Windows.Forms.Label();
+            this.tx_CY = new System.Windows.Forms.TextBox();
+            this.CY = new System.Windows.Forms.Label();
+            this.tx_CX = new System.Windows.Forms.TextBox();
+            this.CX = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -136,6 +149,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zada)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.Direccion.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -682,21 +696,21 @@
             // crearCuentaNuevaToolStripMenuItem
             // 
             this.crearCuentaNuevaToolStripMenuItem.Name = "crearCuentaNuevaToolStripMenuItem";
-            this.crearCuentaNuevaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.crearCuentaNuevaToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.crearCuentaNuevaToolStripMenuItem.Text = "Crear cuenta nueva";
             this.crearCuentaNuevaToolStripMenuItem.Click += new System.EventHandler(this.crearCuentaNuevaToolStripMenuItem_Click);
             // 
             // iniciarSesionToolStripMenuItem
             // 
             this.iniciarSesionToolStripMenuItem.Name = "iniciarSesionToolStripMenuItem";
-            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.iniciarSesionToolStripMenuItem.Text = "Iniciar sesion";
             this.iniciarSesionToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesionToolStripMenuItem_Click);
             // 
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar sesion";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
@@ -940,12 +954,138 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.DoubleClick += new System.EventHandler(this.GCrrt);
             // 
+            // Direccion
+            // 
+            this.Direccion.Controls.Add(this.Cr);
+            this.Direccion.Controls.Add(this.AR);
+            this.Direccion.Controls.Add(this.tx_EA);
+            this.Direccion.Controls.Add(this.EA);
+            this.Direccion.Controls.Add(this.tx_Ra);
+            this.Direccion.Controls.Add(this.Ra);
+            this.Direccion.Controls.Add(this.tx_CZ);
+            this.Direccion.Controls.Add(this.CZ);
+            this.Direccion.Controls.Add(this.tx_CY);
+            this.Direccion.Controls.Add(this.CY);
+            this.Direccion.Controls.Add(this.tx_CX);
+            this.Direccion.Controls.Add(this.CX);
+            this.Direccion.Location = new System.Drawing.Point(119, 84);
+            this.Direccion.Name = "Direccion";
+            this.Direccion.Size = new System.Drawing.Size(751, 368);
+            this.Direccion.TabIndex = 14;
+            this.Direccion.TabStop = false;
+            this.Direccion.Visible = false;
+            // 
+            // Cr
+            // 
+            this.Cr.Location = new System.Drawing.Point(208, 298);
+            this.Cr.Name = "Cr";
+            this.Cr.Size = new System.Drawing.Size(128, 35);
+            this.Cr.TabIndex = 11;
+            this.Cr.Text = "Cancelar";
+            this.Cr.UseVisualStyleBackColor = true;
+            // 
+            // AR
+            // 
+            this.AR.Location = new System.Drawing.Point(401, 298);
+            this.AR.Name = "AR";
+            this.AR.Size = new System.Drawing.Size(128, 35);
+            this.AR.TabIndex = 10;
+            this.AR.Text = "Aceptar y continuar";
+            this.AR.UseVisualStyleBackColor = true;
+            this.AR.Click += new System.EventHandler(this.AR_Click);
+            // 
+            // tx_EA
+            // 
+            this.tx_EA.Location = new System.Drawing.Point(490, 211);
+            this.tx_EA.Name = "tx_EA";
+            this.tx_EA.Size = new System.Drawing.Size(160, 20);
+            this.tx_EA.TabIndex = 9;
+            // 
+            // EA
+            // 
+            this.EA.AutoSize = true;
+            this.EA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EA.Location = new System.Drawing.Point(420, 154);
+            this.EA.Name = "EA";
+            this.EA.Size = new System.Drawing.Size(318, 24);
+            this.EA.TabIndex = 8;
+            this.EA.Text = "en caso de no responder entregar a:";
+            // 
+            // tx_Ra
+            // 
+            this.tx_Ra.Location = new System.Drawing.Point(64, 211);
+            this.tx_Ra.Name = "tx_Ra";
+            this.tx_Ra.Size = new System.Drawing.Size(160, 20);
+            this.tx_Ra.TabIndex = 7;
+            // 
+            // Ra
+            // 
+            this.Ra.AutoSize = true;
+            this.Ra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ra.Location = new System.Drawing.Point(96, 154);
+            this.Ra.Name = "Ra";
+            this.Ra.Size = new System.Drawing.Size(101, 24);
+            this.Ra.TabIndex = 6;
+            this.Ra.Text = "Referencia";
+            // 
+            // tx_CZ
+            // 
+            this.tx_CZ.Location = new System.Drawing.Point(562, 64);
+            this.tx_CZ.Name = "tx_CZ";
+            this.tx_CZ.Size = new System.Drawing.Size(160, 20);
+            this.tx_CZ.TabIndex = 5;
+            // 
+            // CZ
+            // 
+            this.CZ.AutoSize = true;
+            this.CZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CZ.Location = new System.Drawing.Point(528, 19);
+            this.CZ.Name = "CZ";
+            this.CZ.Size = new System.Drawing.Size(221, 24);
+            this.CZ.TabIndex = 4;
+            this.CZ.Text = "Coordenada Z (opcional)";
+            // 
+            // tx_CY
+            // 
+            this.tx_CY.Location = new System.Drawing.Point(282, 64);
+            this.tx_CY.Name = "tx_CY";
+            this.tx_CY.Size = new System.Drawing.Size(160, 20);
+            this.tx_CY.TabIndex = 3;
+            // 
+            // CY
+            // 
+            this.CY.AutoSize = true;
+            this.CY.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CY.Location = new System.Drawing.Point(292, 19);
+            this.CY.Name = "CY";
+            this.CY.Size = new System.Drawing.Size(132, 24);
+            this.CY.TabIndex = 2;
+            this.CY.Text = "Coordenada Y";
+            // 
+            // tx_CX
+            // 
+            this.tx_CX.Location = new System.Drawing.Point(17, 55);
+            this.tx_CX.Name = "tx_CX";
+            this.tx_CX.Size = new System.Drawing.Size(160, 20);
+            this.tx_CX.TabIndex = 1;
+            // 
+            // CX
+            // 
+            this.CX.AutoSize = true;
+            this.CX.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CX.Location = new System.Drawing.Point(29, 19);
+            this.CX.Name = "CX";
+            this.CX.Size = new System.Drawing.Size(134, 24);
+            this.CX.TabIndex = 0;
+            this.CX.Text = "Coordenada X";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(1149, 647);
+            this.Controls.Add(this.Direccion);
             this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.pictureBox1);
@@ -1000,6 +1140,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zada)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.Direccion.ResumeLayout(false);
+            this.Direccion.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1081,6 +1223,19 @@
         private System.Windows.Forms.PictureBox aa;
         private System.Windows.Forms.PictureBox to;
         private System.Windows.Forms.PictureBox ho;
+        private System.Windows.Forms.GroupBox Direccion;
+        private System.Windows.Forms.Button Cr;
+        private System.Windows.Forms.Button AR;
+        private System.Windows.Forms.TextBox tx_EA;
+        private System.Windows.Forms.Label EA;
+        private System.Windows.Forms.TextBox tx_Ra;
+        private System.Windows.Forms.Label Ra;
+        private System.Windows.Forms.TextBox tx_CZ;
+        private System.Windows.Forms.Label CZ;
+        private System.Windows.Forms.TextBox tx_CY;
+        private System.Windows.Forms.Label CY;
+        private System.Windows.Forms.TextBox tx_CX;
+        private System.Windows.Forms.Label CX;
     }
 }
 

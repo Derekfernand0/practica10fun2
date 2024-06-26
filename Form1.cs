@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Xml.Linq;
 
 namespace practica10fun2
 {
@@ -17,6 +18,13 @@ namespace practica10fun2
         private Timer timer;
 
         private Dictionary<string, ListaProductos> productos;
+
+        public string cx { get; private set; }
+        public string cy { get; private set; }
+        public string cz { get; private set; }
+        public string ra { get; private set; }
+        public string ea { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -68,7 +76,13 @@ namespace practica10fun2
 
         private void agregarDirecciopToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Apartado1.Visible = false;
+            dataGridView.Visible = false;
+            menuStrip1.Visible = false;
 
+            //mostrar
+
+            Direccion.Visible = true;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -298,6 +312,15 @@ namespace practica10fun2
         {
             crearCuentaNuevaToolStripMenuItem.Visible = true;
             iniciarSesionToolStripMenuItem.Visible = true;
+        }
+
+        private void AR_Click(object sender, EventArgs e)
+        {
+            cx = tx_CX.Text;
+            cy = tx_CY.Text;
+            cz = tx_CZ.Text;
+            ra = tx_Ra.Text;
+            ea = tx_EA.Text;
         }
     }
     
