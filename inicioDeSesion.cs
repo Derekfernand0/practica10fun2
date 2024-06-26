@@ -13,6 +13,7 @@ namespace practica10fun2
 {
     public partial class inicioDeSesion : Form
     {
+
         public inicioDeSesion()
         {
             InitializeComponent();
@@ -86,6 +87,18 @@ namespace practica10fun2
             {
                 tx_contraseña.PasswordChar = '*'; // Ocultar texto con *
             }
+        }
+
+        private void inicioDeSesion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            NuevaCuenta form1 = new NuevaCuenta();
+            form1.Show();
+            this.Hide();
         }
     }
 }

@@ -49,6 +49,12 @@
     <Compile Include="Carrito.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="DetalleCarrito.cs" />
+    <Compile Include="Direccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Direccion.Designer.cs">
+      <DependentUpon>Direccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

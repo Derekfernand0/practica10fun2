@@ -84,5 +84,12 @@ namespace practica10fun2
                 tx_contraseña.PasswordChar = '*'; // Ocultar texto con *
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            inicioDeSesion form1 = new inicioDeSesion();
+            form1.Show();
+            this.Hide();
+        }
     }
 }

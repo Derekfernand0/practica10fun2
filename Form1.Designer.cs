@@ -50,6 +50,9 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelTotal = new System.Windows.Forms.Label();
             this.Apartado1 = new System.Windows.Forms.GroupBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
@@ -72,15 +75,11 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.crearCuentaNuevaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iniciarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inicioAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarDirecciopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.ga = new System.Windows.Forms.PictureBox();
@@ -391,6 +390,24 @@
             this.dataGridView.TabIndex = 10;
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Borrar);
             // 
+            // Item
+            // 
+            this.Item.HeaderText = "Item";
+            this.Item.Name = "Item";
+            this.Item.Width = 115;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.Width = 115;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.Width = 115;
+            // 
             // labelTotal
             // 
             this.labelTotal.AutoSize = true;
@@ -640,24 +657,6 @@
             this.label18.TabIndex = 6;
             this.label18.Text = "Costo:";
             // 
-            // Item
-            // 
-            this.Item.HeaderText = "Item";
-            this.Item.Name = "Item";
-            this.Item.Width = 115;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.Width = 115;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.Width = 115;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::practica10fun2.Properties.Resources.Pilincraft_20_6_2024;
@@ -673,8 +672,7 @@
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.crearCuentaNuevaToolStripMenuItem,
             this.iniciarSesionToolStripMenuItem,
-            this.cerrarSesionToolStripMenuItem,
-            this.inicioAdminToolStripMenuItem});
+            this.cerrarSesionToolStripMenuItem});
             this.toolStripMenuItem1.Image = global::practica10fun2.Properties.Resources.inicio_de_sesion;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(73, 20);
@@ -700,12 +698,7 @@
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
             this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar sesion";
-            // 
-            // inicioAdminToolStripMenuItem
-            // 
-            this.inicioAdminToolStripMenuItem.Name = "inicioAdminToolStripMenuItem";
-            this.inicioAdminToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.inicioAdminToolStripMenuItem.Text = "Inicio Admin";
+            this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // agregarDirecciopToolStripMenuItem
             // 
@@ -1020,7 +1013,6 @@
         private System.Windows.Forms.ToolStripMenuItem crearCuentaNuevaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iniciarSesionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inicioAdminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarDirecciopToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.PictureBox pictureBox2;

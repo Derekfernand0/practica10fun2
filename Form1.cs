@@ -276,16 +276,28 @@ namespace practica10fun2
 
         private void iniciarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            crearCuentaNuevaToolStripMenuItem.Visible = false;
+            iniciarSesionToolStripMenuItem.Visible = false;
             inicioDeSesion form1 = new inicioDeSesion();//si es correcto pasar al formilario
             form1.Show();
             this.Hide();
+            
         }
 
         private void crearCuentaNuevaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            crearCuentaNuevaToolStripMenuItem.Visible = false;
+            iniciarSesionToolStripMenuItem.Visible = false;
             NuevaCuenta form1 = new NuevaCuenta();//si es correcto pasar al formilario
             form1.Show();
             this.Hide();
+            
+        }
+
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            crearCuentaNuevaToolStripMenuItem.Visible = true;
+            iniciarSesionToolStripMenuItem.Visible = true;
         }
     }
     
